@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leonardo Vargas Abarca | CV Interactivo</title>
+  <meta name="description" content="CV Interactivo de Leonardo Vargas Abarca - Líder regional en gobierno tecnológico, automatización e innovación con más de 10 años de experiencia en banca y servicios financieros.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-mode">
+
+  <!-- Ambient Golden Dust Canvas Background -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Ambient Light Backdrops (Subtle CSS Glows) -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- Header / Navigation -->
+  <header class="main-header">
+    <div class="header-container">
+      <a href="#" class="logo">
+        <span class="logo-dot"></span> Leonardo Vargas
+      </a>
+      <nav class="nav-menu">
+        <a href="#perfil" class="nav-link">Perfil</a>
+        <a href="#experiencia" class="nav-link">Trayectoria</a>
+        <a href="#habilidades" class="nav-link">Habilidades</a>
+        <a href="#educacion" class="nav-link">Educación</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Cambiar tema">
+          <i data-lucide="sun" class="sun-icon"></i>
+          <i data-lucide="moon" class="moon-icon"></i>
+        </button>
+        <button id="download-cv" class="btn-primary">
+          <i data-lucide="download"></i> Descargar CV
+        </button>
+      </div>
+      <button class="mobile-nav-toggle" aria-label="Abrir menú">
+        <i data-lucide="menu" class="menu-icon"></i>
+        <i data-lucide="x" class="close-icon"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-menu-overlay">
+    <nav class="mobile-nav-menu">
+      <a href="#perfil" class="mobile-link">Perfil</a>
+      <a href="#experiencia" class="mobile-link">Trayectoria</a>
+      <a href="#habilidades" class="mobile-link">Habilidades</a>
+      <a href="#educacion" class="mobile-link">Educación</a>
+      <a href="#contacto" class="mobile-link">Contacto</a>
+      <button id="download-cv-mobile" class="btn-primary w-full mt-4">
+        <i data-lucide="download"></i> Descargar CV
+      </button>
+    </nav>
+  </div>
+
+  <main class="content-wrapper">
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-card glass">
+        <div class="hero-content">
+          <div class="hero-header">
+            <span class="badge">Perfil Ejecutivo</span>
+            <h1 class="hero-title">Leonardo Vargas Abarca</h1>
+            <h2 class="hero-subtitle">
+              <span id="role-text">Líder en Gobierno Tecnológico</span><span class="cursor">|</span>
+            </h2>
+            <p class="hero-tagline">Gobierno Tecnológico Regional &bull; Automatización &bull; Estrategia de IA</p>
+          </div>
+          <p class="hero-description">
+            Líder regional en gobierno tecnológico, automatización e innovación con más de 10 años de trayectoria estratégica en banca y servicios financieros en Centroamérica. MBA INCAE y especialista en transformación digital, BPM, RPA y adopción corporativa de Inteligencia Artificial.
+          </p>
+          <div class="hero-meta">
+            <div class="meta-item">
+              <i data-lucide="map-pin"></i>
+              <span>San José, Costa Rica</span>
+            </div>
+            <div class="meta-item">
+              <i data-lucide="mail"></i>
+              <a href="mailto:leovab@gmail.com">leovab@gmail.com</a>
+            </div>
+            <div class="meta-item">
+              <i data-lucide="phone"></i>
+              <a href="tel:+50683089682">(506) 8308-9682</a>
+            </div>
+            <div class="meta-item">
+              <i data-lucide="linkedin"></i>
+              <a href="https://linkedin.com/in/leovab" target="_blank" rel="noopener noreferrer">linkedin.com/in/leovab</a>
+            </div>
+          </div>
+          <div class="hero-cta">
+            <a href="#contacto" class="btn-secondary">
+              <i data-lucide="send"></i> Contactar
+            </a>
+            <a href="#experiencia" class="btn-tertiary">
+              Explorar Trayectoria <i data-lucide="arrow-down" class="arrow-bounce"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="tech-dashboard-visual">
+            <!-- Connecting Animated SVG Lines -->
+            <svg class="tech-connections" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <path d="M 50,50 L 10,20" />
+              <path d="M 50,50 L 90,50" />
+              <path d="M 50,50 L 20,85" />
+            </svg>
+            
+            <!-- Central Tech Core (Animated Isotype) -->
+            <div class="tech-core-container">
+              <div class="tech-core">
+                <div class="core-face face-front"></div>
+                <div class="core-face face-back"></div>
+                <div class="core-face face-right"></div>
+                <div class="core-face face-left"></div>
+                <div class="core-face face-top"></div>
+                <div class="core-face face-bottom"></div>
+              </div>
+            </div>
+            
+            <!-- Tech Metric Cards -->
+            <div class="metric-card metric-1">
+              <div class="metric-icon"><i data-lucide="handshake"></i></div>
+              <div class="metric-data">
+                <span class="metric-value">Tech Vendors</span>
+                <span class="metric-label">Alianzas</span>
+              </div>
+            </div>
+            
+            <div class="metric-card metric-2">
+              <div class="metric-icon"><i data-lucide="git-merge"></i></div>
+              <div class="metric-data">
+                <span class="metric-value">Workflows</span>
+                <span class="metric-label">Automatización</span>
+              </div>
+            </div>
+            
+            <div class="metric-card metric-3">
+              <div class="metric-icon"><i data-lucide="cpu"></i></div>
+              <div class="metric-data">
+                <span class="metric-value">IA & RPA</span>
+                <span class="metric-label">Estrategia</span>
+              </div>
+            </div>
+
+            <div class="metric-card metric-4">
+              <div class="metric-icon"><i data-lucide="award"></i></div>
+              <div class="metric-data">
+                <span class="metric-value">MBA INCAE</span>
+                <span class="metric-label">Negocios</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Logros Destacados Section -->
+    <section id="perfil" class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">Logros Destacados</h2>
+        <p class="section-subtitle">Impacto cuantificable y estratégico a nivel regional</p>
+      </div>
+      <div class="achievements-grid">
+        <div class="achievement-card glass">
+          <div class="card-icon-wrapper red">
+            <i data-lucide="refresh-cw"></i>
+          </div>
+          <h3>Evaluación CRM Regional</h3>
+          <p>Liderazgo de la evaluación técnica y financiera para el cambio de plataforma CRM a nivel regional, definiendo el roadmap estratégico de transformación.</p>
+        </div>
+        <div class="achievement-card glass">
+          <div class="card-icon-wrapper blue">
+            <i data-lucide="scale"></i>
+          </div>
+          <h3>Negociaciones Multimillonarias</h3>
+          <p>Negociación exitosa de contratos globales con Pega, Automation Anywhere, Oracle, Salesforce y ServiceNow, generando ahorros y mejores condiciones regionales.</p>
+        </div>
+        <div class="achievement-card glass">
+          <div class="card-icon-wrapper purple">
+            <i data-lucide="git-branch"></i>
+          </div>
+          <h3>Gobierno Tecnológico</h3>
+          <p>Diseño e implementación del modelo de gobierno basado en chapters multidisciplinarios (negocio + TI) con KPIs en DevOps, QA, producto e IA.</p>
+        </div>
+        <div class="achievement-card glass">
+          <div class="card-icon-wrapper green">
+            <i data-lucide="lightbulb"></i>
+          </div>
+          <h3>Laboratorio de Innovación</h3>
+          <p>Dirección del laboratorio de innovación regional, impulsando la estrategia de IA para acelerar el desarrollo de software y mejorar UX.</p>
+        </div>
+        <div class="achievement-card glass">
+          <div class="card-icon-wrapper yellow">
+            <i data-lucide="smartphone"></i>
+          </div>
+          <h3>Rediseño UX Onboarding</h3>
+          <p>Dirección del rediseño UX de flujos de onboarding digital para hipotecas, prendarios y cuentas en app móvil y sucursales.</p>
+        </div>
+        <div class="achievement-card glass">
+          <div class="card-icon-wrapper orange">
+            <i data-lucide="check-square"></i>
+          </div>
+          <h3>Gestión de Controversias</h3>
+          <p>Implementación regional de Smart Disputes (Pega Systems) para optimizar contracargos y controversias en centro de servicios compartidos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Experience Section (Timeline) -->
+    <section id="experiencia" class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">Trayectoria Profesional</h2>
+        <p class="section-subtitle">Evolución y roles estratégicos en organizaciones multinacionales</p>
+      </div>
+
+      <!-- Filters -->
+      <div class="timeline-filters">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="estrategia-ti">Estrategia e IA</button>
+        <button class="filter-btn" data-filter="procesos-rpa">BPM & RPA</button>
+        <button class="filter-btn" data-filter="finanzas-adicional">Finanzas y Consultoría</button>
+      </div>
+
+      <!-- Timeline wrapper -->
+      <div class="timeline-wrapper">
+        <div class="timeline-line"></div>
+
+        <!-- Job 1 -->
+        <div class="timeline-item" data-category="estrategia-ti">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Abr 2025 - Presente</div>
+          <div class="timeline-content glass">
+            <span class="timeline-tag tag-primary">Gobierno & IA</span>
+            <h3 class="job-title">Subgerente Regional de Estrategia de Automatización y Gobierno Tecnológico</h3>
+            <h4 class="company">BAC LATAM <span class="location">&bull; San José, Costa Rica</span></h4>
+            <p class="job-intro">Responsable del gobierno tecnológico regional de las plataformas de automatización, BPM, CRM, RPA y Low Code. Lidero seis áreas estratégicas con equipos multidisciplinarios:</p>
+            
+            <div class="collapsible-trigger">
+              <span>Ver áreas a cargo y detalles</span>
+              <i data-lucide="chevron-down"></i>
+            </div>
+            
+            <div class="collapsible-content">
+              <ul class="job-bullets">
+                <li><strong>Gobierno Tecnológico:</strong> Dirección de relación comercial y técnica con proveedores globales (Pega, Automation Anywhere, Oracle, Salesforce, ServiceNow) y negociación de contratos millonarios.</li>
+                <li><strong>Diseño UX y Productos Digitales:</strong> Liderazgo del diseño de flujos de onboarding digital para productos financieros clave (hipotecas, cuentas, préstamos).</li>
+                <li><strong>Laboratorio de Innovación:</strong> Definición de la estrategia de Inteligencia Artificial para el banco, acelerando la velocidad de desarrollo.</li>
+                <li><strong>Gobierno de Automatización:</strong> Operación de chapters multidisciplinarios (negocio + tecnología) en DevOps, QA e Innovación.</li>
+                <li><strong>Soporte y Proyectos:</strong> Soporte multinivel de Pega Systems y Oracle CRM, garantizando continuidad de procesos críticos, y liderazgo de centralizaciones regionales.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job 2 -->
+        <div class="timeline-item" data-category="procesos-rpa">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Dic 2023 - Abr 2025</div>
+          <div class="timeline-content glass">
+            <span class="timeline-tag tag-secondary">BPM & Operaciones</span>
+            <h3 class="job-title">Subgerente Regional de Automatización BPM</h3>
+            <h4 class="company">BAC LATAM <span class="location">&bull; San José, Costa Rica</span></h4>
+            <ul class="job-bullets">
+              <li>Dirección regional de operaciones y procesos digitales sobre la plataforma Pega Systems, gestionando equipos de desarrollo distribuidos en Centroamérica.</li>
+              <li>Priorización de la cartera regional de iniciativas de desarrollo BPM, alineando requerimientos de negocio y capacidad técnica.</li>
+              <li>Implementación de productos digitales y automatización del proceso de originación de productos crediticios.</li>
+              <li>Definición de estándares de desarrollo, calidad y entrega para asegurar consistencia regional en soluciones.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Job 3 -->
+        <div class="timeline-item" data-category="procesos-rpa">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Mar 2020 - Dic 2023</div>
+          <div class="timeline-content glass">
+            <span class="timeline-tag tag-secondary">Gestión de Riesgo</span>
+            <h3 class="job-title">Supervisor Regional de Contracargos</h3>
+            <h4 class="company">BAC LATAM &bull; Centro de Servicios Compartidos <span class="location">&bull; San José, Costa Rica</span></h4>
+            <ul class="job-bullets">
+              <li>Liderazgo de la implementación regional del sistema <strong>Smart Disputes (Pega Systems)</strong> para la gestión integral de casos de controversias y contracargos.</li>
+              <li>Procesamiento y control operativo de contracargos a nivel regional, asegurando cumplimiento de SLAs con marcas y reguladores.</li>
+              <li>Implementación de iniciativas de innovación y mejora continua en procesos de Middle Office.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Job 4 -->
+        <div class="timeline-item" data-category="finanzas-adicional">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Ene 2019 - Mar 2020</div>
+          <div class="timeline-content glass">
+            <span class="timeline-tag tag-tertiary">Finanzas</span>
+            <h3 class="job-title">Analista Financiero Corporativo</h3>
+            <h4 class="company">ILG Logistics <span class="location">&bull; San José, Costa Rica</span></h4>
+            <ul class="job-bullets">
+              <li>Análisis financiero corporativo del holding y 13 compañías regionales en Centroamérica y Caribe en el sector logístico.</li>
+              <li>Gestión y evaluación de proyectos de inversión y análisis de inversiones en empresas asociadas.</li>
+              <li>Elaboración de presentaciones ejecutivas y actas para la Junta Directiva y Comité Gerencial.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Job 5 -->
+        <div class="timeline-item" data-category="finanzas-adicional">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Ene 2016 - Ago 2016</div>
+          <div class="timeline-content glass">
+            <span class="timeline-tag tag-tertiary">Calidad & Lean</span>
+            <h3 class="job-title">Ingeniero de Calidad</h3>
+            <h4 class="company">Equifax <span class="location">&bull; Heredia, Costa Rica</span></h4>
+            <ul class="job-bullets">
+              <li>Diseño e implementación de sistemas de control y aseguramiento de calidad para nuevos negocios tecnológicos.</li>
+              <li>Administración de proyectos Lean y eventos Kaizen con ahorros documentados de hasta <strong>USD 100,000</strong>.</li>
+              <li>Evaluación y rediseño de procesos mediante herramientas de optimización y simulación.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Job 6 -->
+        <div class="timeline-item" data-category="procesos-rpa">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Ago 2014 - Sep 2015</div>
+          <div class="timeline-content glass">
+            <span class="timeline-tag tag-secondary">Procesos</span>
+            <h3 class="job-title">Ingeniero de Procesos</h3>
+            <h4 class="company">BAC Credomatic <span class="location">&bull; San José, Costa Rica</span></h4>
+            <ul class="job-bullets">
+              <li>Desarrollo e implementación de proyectos Lean con ahorros documentados superiores a <strong>USD 600,000</strong> en cobros.</li>
+              <li>Planeamiento y administración de estrategias de cobro y evaluación operativa de proveedores externos.</li>
+              <li>Diagnóstico y asesoramiento continuo a la red de cobro externa.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skills Dashboard Section -->
+    <section id="habilidades" class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">Habilidades Técnicas</h2>
+        <p class="section-subtitle">Áreas de especialidad y herramientas de dominio</p>
+      </div>
+
+      <div class="skills-dashboard">
+        <!-- Category 1 -->
+        <div class="skills-card glass">
+          <div class="skills-card-header">
+            <i data-lucide="layers" class="text-accent-red"></i>
+            <h3>Plataformas BPM, RPA & CRM</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <span class="skill-name">Pega Systems</span>
+              <span class="skill-level">Experto</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Automation Anywhere</span>
+              <span class="skill-level">Avanzado</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Salesforce CRM</span>
+              <span class="skill-level">Avanzado</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Oracle CRM & ServiceNow</span>
+              <span class="skill-level">Avanzado</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="skills-card glass">
+          <div class="skills-card-header">
+            <i data-lucide="git-commit" class="text-accent-blue"></i>
+            <h3>Modelado y Gestión</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <span class="skill-name">BPMN 2.0</span>
+              <span class="skill-level">Experto</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Bizagi & Visio</span>
+              <span class="skill-level">Experto</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Arena & Flexsim (Simulación)</span>
+              <span class="skill-level">Avanzado</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Pega Blueprint & Figma</span>
+              <span class="skill-level">Avanzado</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="skills-card glass">
+          <div class="skills-card-header">
+            <i data-lucide="bar-chart-2" class="text-accent-purple"></i>
+            <h3>Datos, BI & Analítica</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <span class="skill-name">Power BI & Tableau</span>
+              <span class="skill-level">Avanzado</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Excel Avanzado & Macros</span>
+              <span class="skill-level">Experto</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">RapidMiner & @Risk</span>
+              <span class="skill-level">Intermedio</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">StatTools & Minitab</span>
+              <span class="skill-level">Avanzado</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 4 -->
+        <div class="skills-card glass">
+          <div class="skills-card-header">
+            <i data-lucide="smartphone" class="text-accent-green"></i>
+            <h3>Diseño UX & Metodologías</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <span class="skill-name">Diseño UX & Prototipado</span>
+              <span class="skill-level">Avanzado</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Lean & Six Sigma</span>
+              <span class="skill-level">Black Belt Equiv.</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Agile (Scrum / Kanban)</span>
+              <span class="skill-level">Experto</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Design Thinking & Gob. Tecnológico</span>
+              <span class="skill-level">Avanzado</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education and Additional Info -->
+    <section id="educacion" class="section-container grid-two-cols">
+      
+      <!-- Education column -->
+      <div class="education-section">
+        <div class="section-header-left">
+          <h2 class="section-title">Formación Académica</h2>
+        </div>
+        <div class="education-list">
+          <div class="education-item glass">
+            <div class="edu-icon"><i data-lucide="graduation-cap"></i></div>
+            <div class="edu-details">
+              <span class="edu-date">2016 - 2018</span>
+              <h3>Maestría en Administración de Empresas (MBA)</h3>
+              <p class="edu-school">INCAE Business School</p>
+              <p class="edu-meta">Especialidad en Administración Industrial y de la Tecnología. Énfasis en Desarrollo Sostenible. Programa a tiempo completo.</p>
+            </div>
+          </div>
+
+          <div class="education-item glass">
+            <div class="edu-icon"><i data-lucide="graduation-cap"></i></div>
+            <div class="edu-details">
+              <span class="edu-date">2009 - 2014</span>
+              <h3>Licenciatura en Ingeniería Industrial</h3>
+              <p class="edu-school">Universidad Latina de Costa Rica</p>
+              <p class="edu-meta">Graduado con honores. Tesis enfocada en el Mejoramiento de la Productividad.</p>
+            </div>
+          </div>
+
+          <div class="education-item glass">
+            <div class="edu-icon"><i data-lucide="graduation-cap"></i></div>
+            <div class="edu-details">
+              <span class="edu-date">2006 - 2013</span>
+              <h3>Bachillerato en Geología</h3>
+              <p class="edu-school">Universidad de Costa Rica</p>
+              <p class="edu-meta">Formación científica analítica aplicable a modelado matemático y resolución de problemas complejos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications & Additional columns -->
+      <div class="additional-section">
+        <div class="section-header-left">
+          <h2 class="section-title">Actividades y Certificaciones</h2>
+        </div>
+        
+        <div class="additional-card glass">
+          <h3>Certificaciones e Idiomas</h3>
+          <ul class="additional-bullets">
+            <li><i data-lucide="badge-check"></i> <span><strong>CAPM:</strong> Certified Associate in Project Management (PMI)</span></li>
+            <li><i data-lucide="badge-check"></i> <span><strong>Consultor Ambiental:</strong> Acreditado para ejercicio profesional</span></li>
+            <li><i data-lucide="languages"></i> <span><strong>Idiomas:</strong> Español (Nativo) / Inglés (Avanzado, C1)</span></li>
+          </ul>
+        </div>
+
+        <div class="additional-card glass">
+          <h3>Actividades Paralelas</h3>
+          <div class="extra-item">
+            <span class="extra-date">2016 - Actualidad</span>
+            <h4>Socio Fundador y Gerente Financiero</h4>
+            <p class="extra-org">Ambitum Geología y Ambiente</p>
+            <p class="extra-desc">Consultoría ambiental, geotecnia e hidrogeología. Soporte en decisiones estratégicas.</p>
+          </div>
+          <div class="extra-item">
+            <span class="extra-date">2018</span>
+            <h4>Consultor en Planeación Estratégica</h4>
+            <p class="extra-org">Grupo Valerio (ICSA) - Nicaragua</p>
+            <p class="extra-desc">Diagnóstico y diseño del plan estratégico de negocios a 5 años.</p>
+          </div>
+          <div class="extra-item">
+            <span class="extra-date">2017</span>
+            <h4>Investigador</h4>
+            <p class="extra-org">CLACDS - INCAE Business School</p>
+            <p class="extra-desc">Análisis y coordinación del Índice de Progreso Social.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="section-container">
+      <div class="contact-card glass">
+        <div class="contact-info">
+          <h2>¿Hablamos sobre tu próximo proyecto?</h2>
+          <p>Estoy disponible para consultorías, proyectos de transformación digital, gobierno de automatización y estrategias de Inteligencia Artificial a nivel regional.</p>
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <i data-lucide="mail"></i>
+              <div>
+                <h4>Correo Electrónico</h4>
+                <a href="mailto:leovab@gmail.com">leovab@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <i data-lucide="phone"></i>
+              <div>
+                <h4>Teléfono / WhatsApp</h4>
+                <a href="tel:+50683089682">+506 8308 9682</a>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <i data-lucide="linkedin"></i>
+              <div>
+                <h4>LinkedIn</h4>
+                <a href="https://linkedin.com/in/leovab" target="_blank" rel="noopener noreferrer">in/leovab</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Interactive clipboard/quick copy card -->
+        <div class="contact-actions glass">
+          <h3>Acciones Rápidas</h3>
+          <p>Copia mis datos de contacto o inicia una conversación directa.</p>
+          <div class="action-buttons-group">
+            <button id="copy-email" class="btn-secondary w-full">
+              <i data-lucide="copy"></i> Copiar Correo
+            </button>
+            <a href="https://wa.me/50683089682" target="_blank" rel="noopener noreferrer" class="btn-secondary w-full text-center flex items-center justify-center">
+              <i data-lucide="message-square"></i> WhatsApp Directo
+            </a>
+            <button id="print-direct" class="btn-primary w-full">
+              <i data-lucide="printer"></i> Imprimir CV
+            </button>
+          </div>
+          <span id="toast-message" class="toast hidden">¡Copiado al portapapeles!</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-container">
+      <p>&copy; 2026 Leonardo Vargas Abarca. Diseñado con altos estándares web.</p>
+      <div class="footer-links">
+        <a href="https://linkedin.com/in/leovab" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:leovab@gmail.com">Email</a>
+        <a href="#perfil">Volver arriba</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Print Tip Modal Guide -->
+  <div id="print-modal" class="modal-overlay hidden">
+    <div class="modal-card glass">
+      <div class="modal-header">
+        <h3>Descargar CV en PDF</h3>
+        <button id="close-modal" class="btn-icon" aria-label="Cerrar"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-step">
+          <span class="step-num">1</span>
+          <p>Se abrirá la ventana de impresión de tu navegador web.</p>
+        </div>
+        <div class="modal-step">
+          <span class="step-num">2</span>
+          <p>En <strong>Destino</strong>, selecciona <strong>Guardar como PDF</strong>.</p>
+        </div>
+        <div class="modal-step">
+          <span class="step-num">3</span>
+          <p>En la sección de <em>Más Ajustes</em>:</p>
+          <ul>
+            <li>Desactiva <strong>Cabeceras y pies de página</strong> para un acabado limpio.</li>
+            <li>Activa <strong>Gráficos de fondo</strong> para mantener la fidelidad de diseño en el PDF.</li>
+            <li>Ajusta la escala si deseas encuadrarlo perfectamente (se recomienda 100%).</li>
+          </ul>
+        </div>
+        <div class="modal-alert">
+          <i data-lucide="info"></i>
+          <span>La hoja de estilos está optimizada para que el PDF luzca como un currículum ejecutivo estructurado e impecable en fondo claro.</span>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="cancel-print" class="btn-secondary">Cancelar</button>
+        <button id="proceed-print" class="btn-primary">Entendido, Guardar PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Bundle -->
+  <script src="script.js"></script>
+</body>
+</html>
